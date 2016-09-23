@@ -68,7 +68,7 @@ struct SocketAckManager {
         let callback = acks.remove(SocketAck(ack: ack))
         
         DispatchQueue.main.async {
-            callback?.callback(["NO ACK"])
+            callback?.callback([])
         }
     }
 }
