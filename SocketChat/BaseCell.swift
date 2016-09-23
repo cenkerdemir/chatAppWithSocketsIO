@@ -14,16 +14,16 @@ class BaseCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        separatorInset = UIEdgeInsetsZero
+        separatorInset = UIEdgeInsets.zero
         preservesSuperviewLayoutMargins = false
-        layoutMargins = UIEdgeInsetsZero
+        layoutMargins = UIEdgeInsets.zero
         layoutIfNeeded()
         
         // Set the selection style to None.
-        selectionStyle = UITableViewCellSelectionStyle.None
+        selectionStyle = UITableViewCellSelectionStyle.none
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
